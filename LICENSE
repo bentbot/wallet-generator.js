@@ -1,3 +1,16 @@
+Array.prototype.map   Public Domain
+window.Crypto         BSD License
+window.SecureRandom   BSD License
+window.EllipticCurve  BSD License
+window.BigInteger     BSD License
+window.QRCode         MIT License
+window.Bitcoin        MIT License
+WalletGenerator       MIT License
+jsqrcode              Apache License, 2.0
+
+
+Copyright (c) 2021 Hogan.re
+
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
