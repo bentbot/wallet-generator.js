@@ -1,5 +1,5 @@
 # wallet-generator.js
-Generate a number of different Blockchain wallet private and public keys in pure Javascipt.
+Generate a number of different crypto coin Blockchain wallet private and public keys in pure Javascipt.
 Forked from WalletGenerator.net JS Wallet Generator: https://github.com/walletgeneratornet/WalletGenerator.net
 
 ### Setup:
@@ -20,14 +20,26 @@ Or in Angular in your angular.json
     ...
 ````
 ### Usage
+JS / HTML:
 ````
       var address = get_address('bitcoin');
       console.log(address);
 ````
+TS / Angular:
+````
+	declare function get_address(name): any;
+	...
+	
+	generate(symbol,cb?) {
+		var wallet = get_address(symbol.toLowerCase());
+		if(cb) cb(wallet);
+    		return wallet;
+  	}
+````
 ### Output:
 
 ````
-    var keyValuePair = {
+	{
 		"coin": 'BitCoin',
 		"public": '17vGnniEqqezaKpdnRE2sUDF1Fr1aAzZD1',
 		"private": '5KDxUKNFi3p5CXcHee588VV5b7F9QxCyN9PoaUUM95CF5pj9tMk'
